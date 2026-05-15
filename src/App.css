@@ -222,3 +222,36 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* --- ESTILO BASE DEL BOTÓN --- */
+.btn-personalizado {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* --- LAS VARIANTES (Colores) --- */
+.primario {
+  background-color: #007bff; /* Azul */
+  color: white;
+}
+
+.exito {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+.peligro {
+  background-color: #dc3545; /* Rojo */
+  color: white;
+}
+
+/* Efecto al pasar el ratón */
+.btn-personalizado:hover {
+  filter: brightness(90%);
+}
